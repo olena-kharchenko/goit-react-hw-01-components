@@ -1,8 +1,8 @@
-// import PaintingList from './components/PaintingList';
-// import paintings from './paintings.json';
-// import Section from './components/Section';
 import user from './components/Profile/user.json';
 import Profile from './components/Profile/Profile';
+
+import statisticalData from './components/Statistics/statistical-data.json';
+import Statistics from './components/Statistics/Statistics';
 
 export default function App() {
   return (
@@ -14,11 +14,8 @@ export default function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Statistics title="Upload stats" stats={statisticalData} />
+      <Statistics stats={statisticalData} />
     </div>
   );
 }
-
-// <Section title={'Топ продаж'}>
-//   <PaintingList items={paintings} />
-// </Section>
-// <Section />
